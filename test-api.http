@@ -1,0 +1,4 @@
+
+### Get top stories from hacker news
+GET http://localhost:5026/BestStories/4
+
