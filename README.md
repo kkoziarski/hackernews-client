@@ -31,7 +31,7 @@ Endpoint URL: http://localhost:5026/BestStories/4
     - Cache expiration configured in settings
 1. Based on the documentation from https://github.com/HackerNews/API, for the `/v0/beststories` endpoint, there is no guarantee the items are sorted based on score. That's why we read all 200 stories returned by the endpoint and then fetch their details, to be able to sort them by score locally, in the local database.
 1. Unit test skipped for now, because I focused on good API design with caching. I may add some example tests in future.
-    - the only worth-testing class is `HackerNewsService`
+    - the only worth testing class is `HackerNewsService`
 
 ## Testing the API
 Prerequisites: open `HackerNewsClient.sln` in Visual Studio and then run (F5) `HackerNewsClient.Api` project
@@ -39,5 +39,5 @@ Prerequisites: open `HackerNewsClient.sln` in Visual Studio and then run (F5) `H
 ### Testing
 1. **Swagger**: you can test requests via swagger web page: http://localhost:5026/swagger/index.html
 ![](./assets/swagger-request.png)
-1. **REST Client**: You can use built-in Visual Studio 2022 _REST Client_ with `.http` file - open attached file `test-api.http` and click _'Send request'_ for the example request.
+1. **REST Client**: You can use built-in Visual Studio 2022 _REST Client_ with `.http` file - open the attached `test-api.http` file and click _'Send request'_ for the example request.
 ![](./assets/http-client-request.png)
