@@ -12,6 +12,8 @@ The results are cached locally.
 
 Framework: .NET Core 7.0
 
+Database: SQLite & Dapper
+
 Application entry point: `./HackerNewsClient.sln`
 
 Swagger URL: http://localhost:5026/swagger/index.html
